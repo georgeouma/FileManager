@@ -1,2 +1,3 @@
 # FileManager
-Extensible file management library for C# .net. This is work in progress, and documentation will be comming up soon.
+Extensible file management library for C# .net. This is work in progress.
+Further implementations, unit tests, and documentation coming soon.
