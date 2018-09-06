@@ -5,12 +5,20 @@ namespace FileManager
 {
     public interface IStoredFileHandle
     {
-        //properties of the stream
+        /// <summary>
+        /// Properties of the stream
+        /// </summary>
         IFileDescriptor Descriptor { get; }
-        //gets a stream that can read contents from
-        //the target file
+        /// <summary>
+        /// Gets a stream that can read contents from the target file
+        /// </summary>
+        /// <returns>Task<Stream></returns>
         Task<Stream> OpenAsync();
-        //copy the contents of the file into the stream
+        /// <summary>
+        /// Copy the contents of the file into the stream
+        /// </summary>
+        /// <param name="destination"></param>
+        /// <returns>Task</returns>
         Task CopyAsync(Stream destination);
     }
 }

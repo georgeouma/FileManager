@@ -16,7 +16,7 @@ namespace FileManager.Service.Installers
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            container.Register(Component.For<FileManager>()
+            container.Register(Component.For<IFileManager>()
                 .ImplementedBy<PaymentFileManager>()
                 .DependsOn(Dependency.OnValue("container", GetContainer(ConfigurationManager.AppSettings["blobStoreConnection"])))
                 .LifestyleSingleton());
