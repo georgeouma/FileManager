@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManager", "FileManager\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.Service", "FileManager.Service\FileManager.Service.csproj", "{ED0932C0-0EE5-4EA0-B02C-246B2D8FC54C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.AzureBlobStoreIntergration", "FileManager.AzureBlobStoreIntergration\FileManager.AzureBlobStoreIntergration.csproj", "{21BFFC8A-104D-4E90-8331-66A5B994C8EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ED0932C0-0EE5-4EA0-B02C-246B2D8FC54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0932C0-0EE5-4EA0-B02C-246B2D8FC54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0932C0-0EE5-4EA0-B02C-246B2D8FC54C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BFFC8A-104D-4E90-8331-66A5B994C8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BFFC8A-104D-4E90-8331-66A5B994C8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BFFC8A-104D-4E90-8331-66A5B994C8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BFFC8A-104D-4E90-8331-66A5B994C8EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

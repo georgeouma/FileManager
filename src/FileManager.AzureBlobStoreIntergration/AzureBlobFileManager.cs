@@ -1,17 +1,16 @@
 ﻿using Microsoft.WindowsAzure.Storage.Blob;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FileManager.Service
+namespace FileManager.AzureBlobStoreIntergration
 {
-    public class PaymentFileManager : IFileManager
+    public class AzureBlobFileManager
     {
-        CloudBlobContainer container;
-        public PaymentFileManager(CloudBlobContainer container)
+        readonly CloudBlobContainer container;
+        public AzureBlobFileManager(CloudBlobContainer container)
         {
             if (container == null)
                 throw new ArgumentNullException("container");

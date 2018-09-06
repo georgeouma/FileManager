@@ -5,9 +5,9 @@ namespace FileManager
 {
     public class FileUploadData
     {
-        public string OriginalName { get; set; }
-        public string ContentType { get; set; }
-        public string UploadedBy { get; set; }
+        public virtual string OriginalName { get; set; }
+        public virtual string ContentType { get; set; }
+        public virtual string UploadedBy { get; set; }
         public Stream FileStream { get; set; }
 
         public FileUploadData(string originalName, string contentType, string uploadedBy,
